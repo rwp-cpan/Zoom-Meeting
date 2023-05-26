@@ -13,8 +13,10 @@ class Zoom::Meeting {
     use URI;
     my $uri = URI -> new ('zoommtg://zoom.us'); # scheme is '_foreign' class, so no 'host' method
     $uri -> path('join');
-    $uri -> query_param('confno' => $id);
-    $uri -> query_param('pwd' => $password);
+    $uri -> query_form_hash( {
+      'confno' => $id,
+      'pwd' => $password
+    } );
     return $uri;
   }
 
