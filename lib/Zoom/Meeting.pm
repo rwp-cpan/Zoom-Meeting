@@ -6,6 +6,7 @@ package Zoom::Meeting; # quirk
 class Zoom::Meeting {
 
   use overload q("") => sub { $_[0] -> _url; };
+
   use URI;
   use Path::Tiny;
   use System::Command;
