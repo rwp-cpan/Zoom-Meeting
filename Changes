@@ -1,0 +1,9 @@
+Revision history for Perl distribution WWW-PiHole
+
+This is a changelog file in addition to git commit messages.
+
+{{$NEXT}}
+  - Add _url private method to construct Zoom URL
+  - Add launch public method to start Zoom with the constructed URL
+  - Release to CPAN after GitHub
+gu

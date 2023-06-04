@@ -1,3 +1,5 @@
+# ABSTRACT: Launch Zoom meetings via Perl
+
 use v5.37.12;
 use experimental qw( class try builtin );
 use builtin qw( true false blessed );

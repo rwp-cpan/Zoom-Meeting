@@ -1,3 +1,6 @@
+# PODNAME: zoom.pl
+# ABSTRACT: Example script to launch Zoom
+
 use v5.37.12;
 
 use Zoom::Meeting;
