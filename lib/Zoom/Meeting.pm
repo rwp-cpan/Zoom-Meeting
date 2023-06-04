@@ -18,6 +18,15 @@ class Zoom::Meeting {
   field $password :param = undef;
   # @formatter:on
 
+=method new
+
+Constructor method used to create a C<Zoom::Meeting> object
+
+Accepts C<id> and C<password> parameters to initialize its fields
+
+=cut
+
+
   method _url ( ) {
     my $uri = URI -> new( 'zoommtg://zoom.us' ); # scheme is '_foreign' class, so no 'host' method
     $uri -> path( 'join' );
@@ -27,6 +36,14 @@ class Zoom::Meeting {
     } );
     return $uri;
   }
+
+=method _url
+
+Private method constructing Zoom URL containing C<confno> and C<pwd> fields
+standing for meeting ID and password respectively
+
+=cut
+
 
   method launch ( ) {
 
@@ -43,5 +60,13 @@ class Zoom::Meeting {
     );
 
   }
+
+=method launch()
+
+Launch the Zoom meeting object in a Zoom application
+
+Supports only WSL currently, Linux and native Windows support to be added
+
+=cut
 
 }
