@@ -6,6 +6,7 @@ This is a changelog file in addition to git commit messages.
 
   - Fix typos in Changes
   - Document methods (launch, _url, and new)
+  - Add and document new public methods (id and password)
 
 0.231550  2023-06-04 19:59:11+02:00 Europe/Budapest
   - Add _url private method to construct Zoom URL

@@ -26,6 +26,36 @@ Accepts C<id> and C<password> parameters to initialize its fields
 
 =cut
 
+  method id ( $new_id = undef ) {
+    if ( defined $new_id ) {
+      $id = $new_id;
+    }
+    else {
+      return $id;
+    }
+  }
+
+=method id([$new_id])
+
+Return or set meeting ID
+
+=cut
+
+
+  method password ( $new_password = undef ) {
+    if ( defined $new_password ) {
+      $password = $new_password;
+    }
+    else {
+      return $password;
+    }
+  }
+
+=method password([$new_password])
+
+Return or set meeting password
+
+=cut
 
   method _url ( ) {
     my $uri = URI -> new( 'zoommtg://zoom.us' ); # scheme is '_foreign' class, so no 'host' method
