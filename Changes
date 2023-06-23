@@ -4,6 +4,8 @@ This is a changelog file in addition to git commit messages.
 
 {{$NEXT}}
 
+0.231570  2023-06-06 18:18:09+02:00 Europe/Budapest
+
   - Fix typos in Changes
   - Document methods (launch, _url, and new)
   - Add and document new public methods (id and password)

@@ -1,5 +1,24 @@
 # ABSTRACT: Launch Zoom meetings via Perl
 
+=head1 SYNOPSIS
+
+  use Zoom::Meeting;
+  # Load the module
+
+  my $zoom = Zoom::Meeting -> new (id => '0' x 11);
+  # Create object with the required meeting ID field set
+
+  $zoom -> password('NEW_PASS');
+  # Set meeting's password via a method call
+
+  say $zoom;
+  # Show the URL string (the Zoom object being overloaded as string)
+
+  $zoom -> launch;
+  # Join the meeting by launching Zoom
+
+=cut
+
 use v5.37.12;
 use experimental qw( class try builtin );
 use builtin qw( true false blessed );
